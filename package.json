@@ -1,10 +1,10 @@
 {
-  "name": "untitled5",
+  "name": "internal_boilerplate",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
+  "description": "team`s internal boilerplate",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "yarn workspaces foreach --all -pt run dev"
   },
   "devDependencies": {
     "typescript": "^5.5.3"
