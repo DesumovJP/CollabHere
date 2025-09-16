@@ -9796,6 +9796,14 @@ __metadata:
   languageName: node
   linkType: hard
 
+"internal_boilerplate@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "internal_boilerplate@workspace:."
+  dependencies:
+    typescript: "npm:^5.5.3"
+  languageName: unknown
+  linkType: soft
+
 "interpret@npm:^2.2.0":
   version: 2.2.0
   resolution: "interpret@npm:2.2.0"
@@ -15918,14 +15926,6 @@ __metadata:
   checksum: 10c0/d758e624c707d49f76f7511d75d09a8eda7f2020d231ec52b67ff4896bcf7013be3f9522d8375f57e586e9a2e827f5641c7e06ee46ab9c435fc2b2b2e9de517a
   languageName: node
   linkType: hard
-
-"untitled5@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "untitled5@workspace:."
-  dependencies:
-    typescript: "npm:^5.5.3"
-  languageName: unknown
-  linkType: soft
 
 "update-browserslist-db@npm:^1.1.3":
   version: 1.1.3
