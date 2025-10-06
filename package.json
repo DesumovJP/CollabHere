@@ -4,7 +4,9 @@
   "description": "team`s internal boilerplate",
   "scripts": {
     "build": "tsc",
-    "dev": "yarn workspaces foreach --all -pt run dev"
+    "dev": "yarn workspaces foreach --all -pt run dev",
+    "backend dev": "yarn workspace backend dev",
+    "frontend dev": "yarn workspace frontend dev"
   },
   "devDependencies": {
     "typescript": "^5.5.3"
