@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.23.4",
+    "@strapi/plugin-graphql": "^5.23.4",
     "@strapi/plugin-users-permissions": "5.23.4",
     "@strapi/strapi": "5.23.4",
     "better-sqlite3": "11.3.0",
@@ -25,6 +26,9 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
+    "strapi-advanced-uuid": "^2.1.1",
+    "strapi-plugin-media-extended": "^1.0.1",
+    "strapi-plugin-rich-text-blocks-extended": "^1.2.0",
     "styled-components": "^6.0.0"
   },
   "devDependencies": {

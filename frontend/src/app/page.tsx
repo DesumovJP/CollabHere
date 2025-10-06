@@ -1,19 +1,13 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import ClassicComponent from "@/components/random/component1";
+//import {getClient} from "@/components/apollo/apolloClient";
+//import { type ArticlesQuery } from "@/graphql/gql";
 
-
-const fetchResult = async () => {
-  const url = "https://example.org/products.json";
-  const data = await fetch(url, {})
-
-  return data.json()
-}
+//const { data:articlesData } = await getClient().query<ArticlesQuery>({ query: articlesQuery });
 
 export default function Home() {
-  const info = fetchResult();
 
-  console.info(info);
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -26,12 +20,17 @@ export default function Home() {
           priority
         />
         <ClassicComponent />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        {/*<ol>*/}
+        {/*  {articlesData?.articles?.map((article) => (*/}
+        {/*      <li key={article?.uniqueId}>*/}
+        {/*        <div>*/}
+        {/*          <div className={'img-wrapper'} style={{width: '100%', minHeight: '15vh', position: 'relative'}}>*/}
+        {/*          <Image src={`${process.env.STRAPI_LOCAL_URL}${article?.author?.avatar?.url}`} objectFit={'cover'} fill={true} alt={article?.author?.avatar?.alternativeText as string ?? 'alternativeText'} />*/}
+        {/*          </div>*/}
+        {/*          </div>*/}
+        {/*      </li>*/}
+        {/*  ))}*/}
+        {/*</ol>*/}
 
         <div className={styles.ctas}>
           <a
