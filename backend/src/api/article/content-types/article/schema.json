@@ -17,7 +17,7 @@
     },
     "description": {
       "type": "text",
-      "maxLength": 80
+      "maxLength": 500
     },
     "slug": {
       "type": "uid",
@@ -27,7 +27,11 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images", "files", "videos"]
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     },
     "author": {
       "type": "relation",
@@ -43,7 +47,25 @@
     },
     "blocks": {
       "type": "dynamiczone",
-      "components": ["shared.media", "shared.quote", "shared.rich-text", "shared.slider"]
+      "components": [
+        "shared.media",
+        "shared.quote",
+        "shared.rich-text",
+        "shared.slider"
+      ]
+    },
+    "displaySize": {
+      "type": "enumeration",
+      "required": true,
+      "default": "medium",
+      "enum": [
+        "large",
+        "medium",
+        "small"
+      ]
+    },
+    "date": {
+      "type": "date"
     }
   }
 }
