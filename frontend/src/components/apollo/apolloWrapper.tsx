@@ -21,6 +21,15 @@ function makeClient() {
             // e.g. Next.js-related `fetch` options regarding caching and revalidation
             // see https://nextjs.org/docs/app/api-reference/functions/fetch#fetchurl-options
         },
+        fetch: (uri, options) => {
+            // Add token to fetch request if available
+            const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
+            const headers = {
+                ...options?.headers,
+                ...(token && { 'Authorization': `Bearer ${token}` })
+            };
+            return fetch(uri, { ...options, headers });
+        },
         // you can override the default `fetchOptions` on a per query basis
         // via the `context` property on the options passed as a second argument
         // to an Apollo Client data fetching hook, e.g.:

@@ -7,11 +7,12 @@ import createEmotionCache from '@/lib/emotion-cache';
 
 // Colors from the provided mock
 const basePalette = {
-  primary: { main: "#7681B3" },
+  // Dark blue active color across the UI
+  primary: { main: "#404D75" },
   secondary: { main: "#00897b" },
   info: { main: "#d81b60" }, // used as tertiary accent
-  background: { default: "#0b1220", paper: "#141b2d" },
-  text: { primary: "#E6EDF3", secondary: "#98A3B1" },
+  background: { default: "#2A2D3A", paper: "rgba(255,255,255,0.24)" },
+  text: { primary: "#E6EDF3", secondary: "rgba(255,255,255,0.86)" },
 };
 
 const shape = { borderRadius: 0 };
@@ -29,7 +30,7 @@ export default function ThemeProvider({ children }: { children: ReactNode }) {
         },
         shape,
         typography: {
-          fontFamily: `var(--font-geist-sans), system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial` ,
+          fontFamily: `var(--font-geist-sans), system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial`,
           // Display styles from mock
           h1: { fontWeight: 700, letterSpacing: -0.5, fontSize: "3.75rem", lineHeight: 1.1 }, // Display Large
           h2: { fontWeight: 700, fontSize: "3rem", lineHeight: 1.15 }, // Display Medium
@@ -42,6 +43,19 @@ export default function ThemeProvider({ children }: { children: ReactNode }) {
           body2: { color: basePalette.text.secondary },
         },
         components: {
+          MuiButton: {
+            styleOverrides: {
+              containedPrimary: {
+                backgroundColor: basePalette.primary.main,
+                '&:hover': { backgroundColor: '#344264' }
+              },
+              outlinedPrimary: {
+                borderColor: basePalette.primary.main,
+                color: basePalette.primary.main,
+                '&:hover': { borderColor: '#344264', backgroundColor: 'rgba(64,77,117,0.08)' }
+              }
+            }
+          },
           MuiTypography: {
             defaultProps: {
               variantMapping: { overline: "div" },
@@ -86,5 +100,3 @@ export default function ThemeProvider({ children }: { children: ReactNode }) {
     </CacheProvider>
   );
 }
-
-

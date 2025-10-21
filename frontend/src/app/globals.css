@@ -1,13 +1,17 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #2A2D3A;
+  --foreground: #E6EDF3;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #2A2D3A;
+    --foreground: #E6EDF3;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
@@ -19,7 +23,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -39,4 +43,125 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+/* Glassmorphism scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.05);
+}
+
+/* Fix for Next.js Image components to respect parent border-radius */
+img {
+  border-radius: inherit !important;
+  overflow: hidden !important;
+}
+
+/* Smooth page transitions */
+.page-transition {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Prevent layout shift during navigation */
+main {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Ensure consistent minimum height for all pages */
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Prevent content jumping during loading */
+.loading-skeleton {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Prevent content jumping during loading */
+.loading-container {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Prevent content jumping during image loading */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure consistent spacing */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Smooth focus transitions */
+*:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.3);
+  outline-offset: 2px;
+  transition: outline 0.2s ease;
+}
+
+/* Prevent content jumping during page transitions */
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Ensure consistent scrollbar width */
+html {
+  scrollbar-gutter: stable;
+}
+
+/* Prevent layout shift during image loading */
+img[src=""], img:not([src]) {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+img[src]:not([src=""]) {
+  opacity: 1;
 }
