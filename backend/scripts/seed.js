@@ -236,6 +236,46 @@ async function importAuthors() {
   }
 }
 
+async function importProducts() {
+  const testProducts = [
+    {
+      title: "Fashion T-Shirt",
+      description: "Comfortable cotton t-shirt with modern design",
+      price: 29.99,
+      slug: "fashion-t-shirt",
+      publishedAt: Date.now(),
+    },
+    {
+      title: "Designer Jeans",
+      description: "Premium denim jeans with perfect fit",
+      price: 89.99,
+      slug: "designer-jeans",
+      publishedAt: Date.now(),
+    },
+    {
+      title: "Elegant Dress",
+      description: "Beautiful evening dress for special occasions",
+      price: 149.99,
+      slug: "elegant-dress",
+      publishedAt: Date.now(),
+    },
+    {
+      title: "Casual Sneakers",
+      description: "Comfortable sneakers for everyday wear",
+      price: 79.99,
+      slug: "casual-sneakers",
+      publishedAt: Date.now(),
+    }
+  ];
+
+  for (const product of testProducts) {
+    await createEntry({
+      model: 'product',
+      entry: product,
+    });
+  }
+}
+
 async function importSeedData() {
   // Allow read of application content types
   await setPublicPermissions({
@@ -244,6 +284,7 @@ async function importSeedData() {
     author: ['find', 'findOne'],
     global: ['find', 'findOne'],
     about: ['find', 'findOne'],
+    product: ['find', 'findOne'], // Add product permissions
   });
 
   // Create all entries
@@ -252,6 +293,7 @@ async function importSeedData() {
   await importArticles();
   await importGlobal();
   await importAbout();
+  await importProducts(); // Add products import
 }
 
 async function main() {

@@ -72,6 +72,7 @@
         "id": 1
       },
       "description": "Follow the story of Aaron Swartz, the boy who could change the world",
+      "date": "2024-05-13",
       "cover": null,
       "blocks": [
         {
@@ -107,6 +108,7 @@
         "id": 1
       },
       "description": "Mantis shrimps, or stomatopods, are marine crustaceans of the order Stomatopoda.",
+      "date": "2024-05-06",
       "cover": null,
       "blocks": [
         {
@@ -142,6 +144,7 @@
         "id": 2
       },
       "description": "How a bug on MySQL is becoming a meme on the internet",
+      "date": "2024-05-08",
       "cover": null,
       "blocks": [
         {
@@ -177,6 +180,7 @@
         "id": 2
       },
       "description": "Description of a beautiful picture",
+      "date": "2024-04-29",
       "cover": null,
       "blocks": [
         {
@@ -212,6 +216,7 @@
         "id": 2
       },
       "description": "Maybe the answer is in this article, or not...",
+      "date": "2024-04-30",
       "cover": null,
       "blocks": [
         {
@@ -234,6 +239,196 @@
         {
           "__component": "shared.slider",
           "files": ["coffee-art.jpg", "coffee-beans.jpg"]
+        }
+      ]
+    },
+    {
+      "title": "Coffee Culture Around The World",
+      "slug": "coffee-culture-around-the-world",
+      "category": {
+        "id": 3
+      },
+      "author": {
+        "id": 1
+      },
+      "description": "Explore different coffee traditions from around the globe",
+      "date": "2024-05-07",
+      "cover": null,
+      "blocks": [
+        {
+          "__component": "shared.rich-text",
+          "body": "## Coffee Traditions \n\nLorem markdownum **coffee** culture around the world."
+        }
+      ]
+    },
+    {
+      "title": "The Future of AI",
+      "slug": "the-future-of-ai",
+      "category": {
+        "id": 2
+      },
+      "author": {
+        "id": 2
+      },
+      "description": "What artificial intelligence means for our future",
+      "date": "2024-05-09",
+      "cover": null,
+      "blocks": [
+        {
+          "__component": "shared.rich-text",
+          "body": "## AI Revolution \n\nArtificial intelligence is changing everything."
+        }
+      ]
+    },
+    {
+      "title": "Sustainable Living Tips",
+      "slug": "sustainable-living-tips",
+      "category": {
+        "id": 4
+      },
+      "author": {
+        "id": 1
+      },
+      "description": "Simple ways to live more sustainably every day",
+      "date": "2024-05-10",
+      "cover": null,
+      "blocks": [
+        {
+          "__component": "shared.rich-text",
+          "body": "## Green Living \n\nSmall changes can make a big difference."
+        }
+      ]
+    },
+    {
+      "title": "Spring Fashion Trends",
+      "slug": "spring-fashion-trends",
+      "category": {
+        "id": 1
+      },
+      "author": {
+        "id": 2
+      },
+      "description": "The hottest fashion trends for this spring season",
+      "date": "2024-04-28",
+      "cover": null,
+      "blocks": [
+        {
+          "__component": "shared.rich-text",
+          "body": "## Fashion Trends \n\nExplore the latest spring fashion trends."
+        }
+      ]
+    },
+    {
+      "title": "Healthy Breakfast Ideas",
+      "slug": "healthy-breakfast-ideas",
+      "category": {
+        "id": 3
+      },
+      "author": {
+        "id": 1
+      },
+      "description": "Start your day right with these nutritious breakfast options",
+      "date": "2024-05-01",
+      "cover": null,
+      "blocks": [
+        {
+          "__component": "shared.rich-text",
+          "body": "## Breakfast Ideas \n\nHealthy and delicious morning meals."
+        }
+      ]
+    },
+    {
+      "title": "Photography Tips for Beginners",
+      "slug": "photography-tips-for-beginners",
+      "category": {
+        "id": 1
+      },
+      "author": {
+        "id": 2
+      },
+      "description": "Learn the basics of photography and improve your skills",
+      "date": "2024-04-26",
+      "cover": null,
+      "blocks": [
+        {
+          "__component": "shared.rich-text",
+          "body": "## Photography Basics \n\nMaster the fundamentals of photography."
+        }
+      ]
+    },
+    {
+      "title": "Minimalist Interior Design",
+      "slug": "minimalist-interior-design",
+      "category": {
+        "id": 4
+      },
+      "author": {
+        "id": 1
+      },
+      "description": "Creating beautiful spaces with minimal elements",
+      "date": "2024-04-27",
+      "cover": null,
+      "blocks": [
+        {
+          "__component": "shared.rich-text",
+          "body": "## Minimalist Design \n\nLess is more in interior design."
+        }
+      ]
+    },
+    {
+      "title": "Best Coffee Brewing Methods",
+      "slug": "best-coffee-brewing-methods",
+      "category": {
+        "id": 3
+      },
+      "author": {
+        "id": 2
+      },
+      "description": "Discover different ways to brew the perfect cup of coffee",
+      "date": "2024-04-25",
+      "cover": null,
+      "blocks": [
+        {
+          "__component": "shared.rich-text",
+          "body": "## Coffee Brewing \n\nExplore various brewing techniques."
+        }
+      ]
+    },
+    {
+      "title": "Digital Detox Benefits",
+      "slug": "digital-detox-benefits",
+      "category": {
+        "id": 2
+      },
+      "author": {
+        "id": 1
+      },
+      "description": "Why taking a break from technology is good for you",
+      "date": "2024-04-24",
+      "cover": null,
+      "blocks": [
+        {
+          "__component": "shared.rich-text",
+          "body": "## Digital Detox \n\nReconnect with yourself by disconnecting."
+        }
+      ]
+    },
+    {
+      "title": "Urban Gardening Guide",
+      "slug": "urban-gardening-guide",
+      "category": {
+        "id": 4
+      },
+      "author": {
+        "id": 2
+      },
+      "description": "How to grow plants in small city spaces",
+      "date": "2024-04-23",
+      "cover": null,
+      "blocks": [
+        {
+          "__component": "shared.rich-text",
+          "body": "## Urban Gardening \n\nGreen living in the city."
         }
       ]
     }

@@ -54,16 +54,6 @@
         "shared.slider"
       ]
     },
-    "displaySize": {
-      "type": "enumeration",
-      "required": true,
-      "default": "medium",
-      "enum": [
-        "large",
-        "medium",
-        "small"
-      ]
-    },
     "date": {
       "type": "date"
     }
