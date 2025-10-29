@@ -65,7 +65,8 @@ $RECYCLE.BIN/
 # Logs and databases
 ############################
 
-.tmp
+.tmp/*
+!.tmp/data.db
 *.log
 *.sql
 *.sqlite
@@ -80,8 +81,8 @@ $RECYCLE.BIN/
 ssl
 .idea
 nbproject
-public/uploads/*
-!public/uploads/.gitkeep
+# public/uploads/* - ВИДАЛЕНО: тепер картинки включені до Git
+# !public/uploads/.gitkeep
 .tsbuildinfo
 .eslintcache
 
